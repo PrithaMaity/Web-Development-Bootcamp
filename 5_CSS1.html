@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Internal css-->>
+    <style>
+        p {
+            color:rgb(66, 252, 190);
+            font-size:larger;
+        }
+        .para {
+            color: blue;
+        }
+        #para-sf{
+            color: orange!important;
+        }
+        h1{
+            background-color: rgba(2, 237, 237, 0.901);
+        }
+        table,tr,td{
+            border: 10px solid aquamarine;
+            border-collapse:collapse ;
+        }
+        .green{
+            color: green;
+        }
+        .blue{
+            color: blueviolet;
+        }
+        .small{
+            font-size: small;
+        }
+        .larger{
+            font-size: larger;
+        }
+        /* #button{
+            color: red;
+        } */
+        #para{
+            background-color: black;
+        }
+        button:hover{
+            color:green;
+        }
+        /* /* a:hover{
+            color: blueviolet;
+        } 
+        .link-color:hover{
+            color: brown;
+        } */
+        #link:hover{
+            color: blueviolet;
+        }
+        .dive{
+            background-color: black;
+        }
+        #divi{
+            background-color: yellow;
+            color: brown;
+            font-size: larger;
+        }
+        divc{
+            background-color: green;
+            color: aliceblue;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid blue;
+            background-color: aquamarine;
+            margin: 10px;
+            padding: 10px;  
+            /* box-sizing: border-box; */
+        }
+        #aq{
+            background-color: #0871a6;
+        }
+        #bv{
+            background-color:rgb(177, 102, 247);
+        }
+        #or{
+            background-color: rgb(rgb(36, 246, 221), rgb(184, 201, 255), blue);
+        }
+        #div1{
+            background-color: black;
+            width: 200px;
+            height: 200px;
+        }
+        #div2{
+            background-color: aqua;
+            width: 50%;
+            height: 50%;
+            margin: 10px;
+            padding: 10px;
+            border: 10px;
+            border-color: red;
+        }
+        #first-para{
+          background-color: black; 
+          width: 50vw;
+          height:50vh;
+        }
+        #pr{
+            background-color: skyblue;
+            width: 500px;
+            height: 100px;
+        }
+        #pri{
+            background-color: black;
+            width: 10%;
+            height: 10px;
+            margin: 10px;
+        }
+        #em{
+            background-color: #07567d;
+            width: 50px;
+            height: 50px;
+            font-size: 10px; ;
+        }
+        #em2{
+            background-color: blueviolet;
+            font-size: 4em;
+        }
+    </style>
+
+<!--Linl css file on external css-->
+    <link rel="Stylesheet" href="style.css"><!--path into href-->
+</head>
+<body>
+    <p>This is paragraph</p>
+    <h1>This is CSS1</h1>
+    <p>Second para</p>
+
+    <table>
+        <tr>
+            <td>css1</td>
+            <td>css1</td>
+            <td>css1</td>
+        </tr>
+        <tr>
+            <td>css1</td>
+            <td>css1</td>
+            <td>css1</td>
+        </tr>
+        <tr>
+            <td>css1</td>
+            <td>css1</td>
+            <td>css1</td>
+        </tr>
+        <tr>
+            <td>css1</td>
+            <td>css1</td>
+            <td>css1</td>
+        </tr>
+    </table>
+
+    <p class="green">hi! my name is pritha</p>
+    <p class="green">hi! my name is pritha</p>
+    <p class="red">hi! my name is pritha</p>
+    <p class="blue">hi! my name is pritha</p>
+    <p class="aquamarine">hi! my name is pritha</p>
+
+    <h1 class="small">world is beautiful</h1>
+    <h2 class="small">world is beautiful</h2>
+    <h3 class="small">world is beautiful</h3>
+    <h4 class="larger">world is beautiful</h4>
+    <h5 class="larger">world is beautiful</h5>
+    <h6 class="larger">world is beautiful</h6>
+
+    <button id="button">Submit</button>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, similique!</p>
+
+    <a id="link" class="link-color" href="https:thecodehelp.in">the code help</a>
+<!--inline css-->>
+    <p style="font-style: italic;">Hello jee, kaise ho saare</p>
+
+    <p>Let's apply internal css on this</p>
+
+    <p class="para" id="para-sf" style="color: aqua;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam.</p>
+
+    <div class="dive" id="divi">Kya haal hai mere dost</div>
+
+<!--Box model-->
+<div class="box" id="aq">A<!--content--></div>  
+<div class="box" id="bv">B</div>  
+<div class="box" id="or">C</div>  
+
+<div id="div1">
+
+    <div id="div2"></div>
+
+</div>
+
+<!--relative unit to viewport-->
+<p id="first-para">This is my first para</p>
+<div id="pr">
+    <div id="pri"></div>
+</div>
+<div id="em"> 
+    <div id="em2"></div>
+</div>
+</body>
+</html>
