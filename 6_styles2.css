@@ -1,0 +1,95 @@
+.box {
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    background-image: linear-gradient(aqua, rgb(237, 237, 99), rgb(246, 156, 171));
+    background-image: linear-gradient(to right, aqua, rgb(237, 237, 99), rgb(246, 156, 171));
+    background-image: linear-gradient(to left, aqua, rgb(237, 237, 99), rgb(246, 156, 171));
+    background-image: linear-gradient(to top right, aqua, rgb(237, 237, 99), rgb(246, 156, 171));
+    background-image: linear-gradient(to top left, aqua, rgb(237, 237, 99), rgb(246, 156, 171));
+    background-image: linear-gradient(to bottom right, aqua, rgb(237, 237, 99), rgb(246, 156, 171));
+    background-image: linear-gradient(to bottom left, aqua, rgb(237, 237, 99), rgb(246, 156, 171));
+    background-image: linear-gradient(orange,white, green);
+
+    /* background-image: linear-gradient(to top, aqua, rgb(237, 237, 99), rgb(246, 156, 171)); */
+    /* background-image: linear-gradient(to bottom, aqua, rgb(237, 237, 99), rgb(246, 156, 171)); */
+}
+
+.mydiv{
+    border: 1px solid black;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    background-image: radial-gradient(rgb(4, 4, 152), rgb(61, 61, 238), rgb(94, 203, 246));
+    background-image: radial-gradient(circle, rgb(238, 238, 12) 10%, rgb(247, 109, 44) 20%, red 50%);
+}
+
+h2{
+    text-shadow: 3px 3px 3px rgb(22, 155, 249);
+    text-shadow: 6px 6px 3px rgb(2, 113, 2), 6px 6px 6px yellow;
+}
+
+.shadow{
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+    box-shadow: -1px -10px 15px, 10px 1px 15px blue;
+    color: green;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;;
+  }
+
+  h3 {
+    color: forestgreen;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .border{
+    border: solid;
+    height: 100px;
+    width: 102px;
+    border: dashed red;
+    border: 1rem solid;
+    background-origin: thick double #32a1ce;
+    border: 4mm ridge rgba(211, 220, 50, .6);;
+  }
+
+  .max-height{
+    max-height: 100px;
+    border: 1px solid black;
+    overflow: scroll;
+  }
+
+  .min-height{
+    margin: 10px;
+    min-height: 100px;
+    border:1px solid black;
+  }
+
+  #divi{
+    height: 25px;
+    border: 1px solid black;
+    overflow:clip;
+  }
+  .trans{
+    background-color: forestgreen;
+    /* For change vertical and horizontal position */
+    /* transform: translateX(100px);
+    transform: translateY(50px); 
+    // or
+    transform: translate(100px, 50px); */
+
+    /* For rotation */
+    /* transform: rotate(-45deg); */
+    margin:200px;
+    
+     /*  For zooming vertical, horizontal*/
+    transform: scale(2,3);    
+    /* transform: scaleX(2);
+    transform: scaleY(4); */
+
+    transform: skew(45deg);
+  }
