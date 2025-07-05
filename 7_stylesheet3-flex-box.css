@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    height:400px;
+    border: 2px solid green;
+    display:flex;
+    /* change direction vertically/horizontally */
+    flex-direction: column;
+
+    /* for preserve width  */
+    flex-wrap: wrap;
+
+    /* move content based on main axis(horizontally) */
+    justify-content: flex-start;
+
+    /* space will be equally between flex item's  */
+    justify-content:space-evenly;
+
+    /* move items based on cross axis(vertically) */
+    align-items: center;
+
+    /* A short hand notation
+    for gap between items (row gap, column gap) */
+    gap: 10px;
+
+    /* handle spacing between flex item */
+    align-content: center;
+}
+
+.box{
+    border: 1px solid brown;
+    background-color: rgb(171, 233, 212);
+    /* width will be increase equally of boxes */
+    flex-grow: 1;
+    
+    width: 100px;
+}
+
+#box1{
+   order:1;
+   /* increase a particular box size */
+   flex-grow: 1;
+
+   /* same ase width but overflow content will be shown */
+    flex-basis: 50%;
+}
+
+#box2{
+    order:0;
+
+    /* set squeeze of boxes */
+    flex-shrink: 1;
+
+    /* overflow content will be hiden */
+    width: 100px;
+
+    /* box will be move on up */
+    align-self: flex-start;
+
+    /* box will be move on down */
+    align-self: flex-end;
+}
+
+#box3{
+    order:4;
+    /* box will be streach vertically */
+    align-self:stretch ;
+}
