@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#wrapper{
+    height: 100vh;
+
+    /* to off scrolling right-left axis */
+    overflow-x: hidden;
+
+    /* to scroll up-down */
+    overflow-y: auto;
+
+    /* for give  an element a 3D-space by affecting the distance between the Z plane and the user */
+    perspective: 10px;
+}
+
+.container{
+    /* to overlap bg img and fg img */
+    position:relative;
+    display: flex;
+
+    /* To place content on center */
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+    /* the element establishes a 3D rendering context */
+    transform-style: preserve-3d;
+
+    /* for overlapping */
+    z-index: -1;
+}
+
+.background{
+    /* for set img distance */
+    transform:translateZ(-40px) scale(6);
+}
+
+.foreground{
+    /* for set img distance */
+    transform: translateZ(-20px) scale(3);
+}
+
+.background, .foreground{
+    /* for overlapping img */
+    position:absolute;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    /* object-fit: cover; */
+}
