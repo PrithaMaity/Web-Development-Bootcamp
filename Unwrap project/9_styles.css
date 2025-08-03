@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box size will be not increase to add padding and border  */
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.container{
+    /* content will be overflow if it will more than 1200px */
+    max-width: 1200px ;
+    height: 100%;
+    /* left and right side margin will be equal, content will be exactly in center */
+    margin: 0 auto;
+    /* padding is the space between border and content  */
+    padding: 20px;
+}
+
+.container h1{
+    /* top right bottom */
+    margin: 20px 100px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.Gallery{
+    /* for equal spacing */
+    display: flex;
+    /* content will placed vertically if it does not fit in one row */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    width: 32%;
+    /* for overlapping */
+    position: relative;
+    margin-bottom: 20px;
+    /* for rounded the corner */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    /* for black & white */
+    filter: grayscale(100%);
+    box-shadow: 0 0 20px #333;
+    object-fit: cover;   
+}
+
+.card :hover{
+    /*  while hover card will be increase*/
+    transform: scale(1.03);
+    /* for timing */
+    transition: 0.5s;
+    /* back the image original color while hover */
+    filter: drop-shadow(0 0 10px #1d1d1d);
+
+    /* back the image color while hover */
+    /* filter: grayscale(0%); */
+}
+
+.card:hover img{
+    /* back the image original color while hover */
+    filter: grayscale(0%);
+}
+
+.card figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    width: 100%;
+    height: 20%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    /* transparent text */
+    opacity: 0;
+    border-radius: 0 0 10px 10px;
+    /* For caption background shadow while hover */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.5s;
+}
+
+.card:hover figcaption{
+    opacity:1;
+    transform: scale(1.03);
+}
