@@ -1,0 +1,55 @@
+.container{
+    border: solid black;
+    background-color: yellow;
+    height: 700px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 100px);
+
+    grid-gap: 10px;
+
+    /* these four properties (justify-content, justify-items, align-items, align-content) are used in parent content*/
+
+    /* justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly; */
+
+    /* align-items: start;
+    align-items: end;
+    align-items: baseline;*/
+    /* default */
+    /* align-items: stretch; */
+    
+    /* align-content: space-between;
+    align-content: space-around;
+    align-content: space-evenly; */
+
+    /* short-hand notation of justify-content & align-content */
+    place-content: center;
+
+    /* short-hand notation of justify-items & align-items */
+    place-items: center;
+}
+
+.box{
+    border:3px solid seagreen ;
+    background-color: #f9f4e8;
+}
+
+#box1{
+
+    /* these two properties (justify-self, align-self) are used in child content */
+    
+    /* justify-self: start;
+    justify-self: end; */
+    justify-self: center;
+
+    /* align-self: start; */
+    align-self: center;
+}
+
+/* 1:15 */

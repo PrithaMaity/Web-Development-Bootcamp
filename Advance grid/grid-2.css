@@ -1,0 +1,21 @@
+.container{
+    height: 700px;
+    border: 1px solid black;
+    background-color: rgb(112, 229, 231);
+
+    display: grid;
+    grid-gap: 10px;
+
+    /*  minimum value of box and maximum will automatically increase acording to box number*/
+    grid-auto-rows: minmax(100px,auto);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.box{
+
+    background-color: blueviolet;
+    border: 2px solid rgb(95, 8, 182);
+    /* height: 100px;
+    width: 100px; */
+}
+
